@@ -1,7 +1,7 @@
 .App-menu {
   animation-delay: 3s;
-  padding-top: 15px;
-  font-size: calc(3px + 2vmin);
+  padding-top: 28px;
+  font-size: calc(4px + 2vmin);
   color: white;
 }
 
@@ -9,7 +9,7 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
-  padding: 3px 0px 0px 3px;
+  padding: 5px 0px 0px 5px;
   margin-left: 66%;
   display: flex;
   align-items: right;
@@ -23,14 +23,17 @@
   transition: 0.6s;
 }
 
-@media screen and (min-width: 501px) and (max-width: 1000px) {
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  .App-menu {
+    font-size: calc(5px + 2vmin);
+  }
   .App-link {
     margin-left: 55%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .App-menu {
-    font-size: calc(8px + 3vmin);
+    font-size: calc(5px + 3vmin);
   }
   
   .App-link {
