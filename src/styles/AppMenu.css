@@ -22,3 +22,18 @@
   background-color: white;
   transition: 0.6s;
 }
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .App-link {
+    margin-left: 55%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .App-menu {
+    font-size: calc(8px + 3vmin);
+  }
+  
+  .App-link {
+    margin-left: 30%;
+  }
+}
