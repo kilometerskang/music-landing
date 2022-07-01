@@ -1,0 +1,93 @@
+.App {
+  text-align: right;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-container {
+  background-image:
+    linear-gradient(to bottom, rgba(198, 95, 47, 0.207), rgba(64, 128, 193, 0.278)),
+    url("../../public/bg.gif");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  background-size: cover;
+}
+
+.App-text {
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+
+@media screen and (min-width: 1251px) {
+  .App-small-container {
+    padding-top: 5rem;
+    width: 128vh;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1250px) {
+  .App-small-container {
+    padding-top: 5rem;
+    width: 100vh;
+  }
+  .App-text {
+    font-size: calc(12px + 2vmin);
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .App-small-container {
+    padding-top: 5rem;
+    width: 84vh;
+  }
+  .App-text {
+    font-size: calc(12px + 2vmin);
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .App-container {
+    background-image:
+      linear-gradient(to bottom, rgba(198, 95, 47, 0.207), rgba(64, 128, 193, 0.278)),
+      url("../../public/bg-mobile.gif");
+  }
+  .App-small-container {
+    padding-top: 5rem;
+    width: 62vh;
+  }
+  .App-text {
+    font-size: calc(11px + 2vmin);
+  }
+}
+@media screen and (max-width: 500px) {
+  .App-container {
+    background-image:
+      linear-gradient(to bottom, rgba(198, 95, 47, 0.207), rgba(64, 128, 193, 0.278)),
+      url("../../public/bg-mobile.gif");
+  }
+  .App-small-container {
+    padding-top: 4rem;
+    width: 46vh;
+  }
+  .App-text {
+    font-size: calc(11px + 2vmin);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
